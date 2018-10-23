@@ -12,7 +12,7 @@ echo "**************************************************************************
 # Build Xamarin.UITest (For building Xamarin.Android. If you are building Xamarin iOS, please just comment out this part as .sln will run it)
 ##################################################
 
-/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild $APPCENTER_SOURCE_DIRECTORY/TestXamarinForms/TestXamarinForms/TestXamarinForms.UITest.csproj /t:Build /p:Configuration=Debug
+/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild $APPCENTER_SOURCE_DIRECTORY/Xamarin.UITest/UITestDemo/UITestDemo.UITest/UITestDemo.UITest.csproj /t:Build /p:Configuration=Debug
 
 ##################################################
 # Start UI Tests
