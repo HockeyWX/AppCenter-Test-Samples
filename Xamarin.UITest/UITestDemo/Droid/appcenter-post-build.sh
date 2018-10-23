@@ -12,7 +12,7 @@ echo "**************************************************************************
 # Build Xamarin.UITest (For building Xamarin.Android. If you are building Xamarin iOS, please just comment out this part as .sln will run it)
 ##################################################
 
-msbuild $APPCENTER_SOURCE_DIRECTORY/TestXamarinForms/TestXamarinForms/TestXamarinForms.UITest.csproj /t:Build /p:Configuration=Debug
+/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild $APPCENTER_SOURCE_DIRECTORY/TestXamarinForms/TestXamarinForms/TestXamarinForms.UITest.csproj /t:Build /p:Configuration=Debug
 
 ##################################################
 # Start UI Tests
@@ -20,9 +20,9 @@ msbuild $APPCENTER_SOURCE_DIRECTORY/TestXamarinForms/TestXamarinForms/TestXamari
 
 # variables
 appCenterLoginApiToken=$AppCenterLoginForAutomatedUITests # this comes from the build environment variables
-appName="$AppOwner/$AppName" # this comes from the build environment variables
-deviceSetName="$AppOwner/$AppDeviceSetName" # this comes from the build environment variables
-testSeriesName="$AppTestSeriesName" # this comes from the build environment variables
+appName="$AppOwner/$AppName"
+deviceSetName="$AppOwner/$AppDeviceSetName"
+testSeriesName="$AppTestSeriesName"
 
 echo ""
 echo "Start Xamarin.UITest run"
