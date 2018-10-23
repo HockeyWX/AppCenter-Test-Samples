@@ -8,11 +8,11 @@ echo "**************************************************************************
 echo "Post Build Script"
 echo "**************************************************************************************************"
 
-/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild $APPCENTER_SOURCE_DIRECTORY/s/Xamarin.UITest/UITestDemo/UITestDemo.UITest/UITestDemo.UITest.csproj /t:Build /p:Configuration=Debug
+/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild $APPCENTER_SOURCE_DIRECTORY/Xamarin.UITest/UITestDemo/UITestDemo.UITest/UITestDemo.UITest.csproj /t:Build /p:Configuration=Debug
 
 ##################################################
 # Start UI Tests
 ##################################################
 
-cd $APPCENTER_SOURCE_DIRECTORY
+cd $APPCENTER_SOURCE_DIRECTORY/Xamarin.UITest/UITestDemo/UITestDemo.UITest/bin/Debug
 ls
