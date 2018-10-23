@@ -8,6 +8,8 @@ echo "**************************************************************************
 echo "Post Build Script"
 echo "**************************************************************************************************"
 
+/Library/Frameworks/Mono.framework/Versions/5_12_0/bin/msbuild /Users/vsts/agent/2.140.2/work/1/s/Xamarin.UITest/UITestDemo/UITestDemo.UITest/UITestDemo.UITest.csproj /t:Build /p:Configuration=Debug
+
 ##################################################
 # Start UI Tests
 ##################################################
