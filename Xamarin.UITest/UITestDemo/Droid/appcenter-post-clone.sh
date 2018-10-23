@@ -1,1 +1,1 @@
-find / -name test-cloud.exe
+# find / -name test-cloud.exe
