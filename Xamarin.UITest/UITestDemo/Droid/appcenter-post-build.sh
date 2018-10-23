@@ -20,9 +20,9 @@ msbuild $APPCENTER_SOURCE_DIRECTORY/TestXamarinForms/TestXamarinForms/TestXamari
 
 # variables
 appCenterLoginApiToken=$AppCenterLoginForAutomatedUITests # this comes from the build environment variables
-appName="$AppOwner/$AppName"
-deviceSetName="$AppOwner/$AppDeviceSetName"
-testSeriesName="$AppTestSeriesName"
+appName="$AppOwner/$AppName" # this comes from the build environment variables
+deviceSetName="$AppOwner/$AppDeviceSetName" # this comes from the build environment variables
+testSeriesName="$AppTestSeriesName" # this comes from the build environment variables
 
 echo ""
 echo "Start Xamarin.UITest run"
